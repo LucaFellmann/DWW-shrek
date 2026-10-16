@@ -1,34 +1,50 @@
 body{
-    background-color: salmon
-}
-
-p{
-    color: aquamarine;
-    font-size: 20px;
-    font-weight: bold;
+    width: 100vw;
+    height: 100vh;
 }
 
 
-li{
-    color: white;
-}
+#container{
+    background-color: #EEEEEE;
+    width: 100vw;
+    height:50vh;
 
-#bananas{
+    /* display flex is the keyword to setup autolayout */
+    display: flex;
+    /* what direction the children will face */
+    flex-direction: row;
     
-    font-size: 30px;
+    /* we center the children in the main axis and cross axis */
+    justify-content: center;
+    align-items: center;
+
+    /* the gap between the children */
+    gap: 20px;
+
 }
 
 
-.black-bg{
-    background-color: black;
-    color: white;
-    padding: 0px 32px;
-    margin: 64px;
+.box{
+    background-color: #888888;
+    width: 200px;
+    height: 200px;
 }
 
-#bob{background-color: purple;
-    color: white;
-    padding: 0px 32px;
-    margin: 64px;
+
+
+.card{
+    background-color: #C9E39A;
+    padding: 16px;
+    border-radius: 8px;
+
+    width: 20%;
 }
 
+
+#section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
